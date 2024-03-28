@@ -1,17 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_inbed_who",
+  "name": "obj_text_box",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "in bed",
-    "path": "folders/Objects/in bed.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -30,9 +30,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_choice_box",
-    "path": "sprites/spr_choice_box/spr_choice_box.yy",
+    "name": "spr_text_box",
+    "path": "sprites/spr_text_box/spr_text_box.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }
