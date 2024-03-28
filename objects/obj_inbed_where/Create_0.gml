@@ -1,4 +1,3 @@
-picked = true;
 pick_where = false;
 
 where_description = "Where am I?"

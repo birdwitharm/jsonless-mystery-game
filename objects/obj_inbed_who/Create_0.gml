@@ -1,4 +1,3 @@
-picked = true;
 pick_who = false;
 
 who_description = "Who am I?"
