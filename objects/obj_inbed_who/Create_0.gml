@@ -1,10 +1,7 @@
-huh = true;
+picked = true;
 pick_who = false;
-pick_where = false;
 
-where_description = "A bedroom, it looks like."
-
-who_description = "I have absolutely no idea."
+who_description = "Who am I?"
 
 inbed_done = false; // set to be able to press space to go to bedroom once this is true + give direction to press space
 

@@ -1,6 +1,15 @@
-if (mouse_x > x && mouse_x < x + sprite_width && 
-	mouse_y > y && mouse_y < y + sprite_height &&
-	mouse_check_button_pressed(1))
+if obj_inbed_text_box.huh == true
 	{
-		obj_text_box.Activate_Text_Box(who_description);
+		obj_inbed_text_box.Activate_Text_Box(who_description);
+	}
+
+if (obj_inbed_text_box.huh)
+	{
+		visible = true;
+	}
+
+if (mouse_x > x && mouse_x < x + sprite_width && 
+	mouse_y > y && mouse_y < y + sprite_height && visible && mouse_check_button_pressed(1))
+	{
+		pick_who = true;
 	}
