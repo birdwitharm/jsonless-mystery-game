@@ -1,5 +1,3 @@
-image_speed = 0;
-
 text = "Huh?";
 picked_where = "A bedroom, it looks like."
 picked_who = "I have absolutely no idea."

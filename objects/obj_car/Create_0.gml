@@ -1,0 +1,1 @@
+car_text = "It's a car.";

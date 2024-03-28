@@ -3,7 +3,6 @@
   "resourceVersion": "1.0",
   "name": "obj_text_box",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
@@ -34,5 +33,5 @@
     "path": "sprites/spr_text_box/spr_text_box.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
