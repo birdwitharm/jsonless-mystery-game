@@ -17,6 +17,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"obj_inbed_where","order":4,"path":"objects/obj_inbed_where/obj_inbed_where.yy",},
     {"name":"obj_text_box","order":2,"path":"objects/obj_text_box/obj_text_box.yy",},
     {"name":"rm_bedroom","order":1,"path":"rooms/rm_bedroom/rm_bedroom.yy",},
     {"name":"obj_blanket","order":3,"path":"objects/obj_blanket/obj_blanket.yy",},
@@ -24,6 +25,8 @@
     {"name":"spr_blanket","order":3,"path":"sprites/spr_blanket/spr_blanket.yy",},
     {"name":"rm_kitchen","order":2,"path":"rooms/rm_kitchen/rm_kitchen.yy",},
     {"name":"obj_cameraManager","order":1,"path":"objects/obj_cameraManager/obj_cameraManager.yy",},
+    {"name":"obj_inbed_who","order":5,"path":"objects/obj_inbed_who/obj_inbed_who.yy",},
     {"name":"spr_text_box","order":1,"path":"sprites/spr_text_box/spr_text_box.yy",},
+    {"name":"spr_choice_box","order":4,"path":"sprites/spr_choice_box/spr_choice_box.yy",},
   ],
 }
