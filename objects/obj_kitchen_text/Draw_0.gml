@@ -1,30 +1,51 @@
-draw_sprite(spr_text_box, 0, x, y);
+draw_sprite(spr_bigger_text_box, 0, x, y);
 draw_set_color(c_white);
 draw_set_font(fn_regular);
 
-// writes "Huh" before a timer expires
-if (!huh && !obj_inbed_where.pick_where && !obj_inbed_who.pick_who)
+// not met voice
+if (!obj_fridge.clicked && !met_voice)
 {
-	draw_text_ext(x+17, y+16, text, string_height(text), sprite_width);
+	draw_text_ext(x+22, y+22, text, string_height(text), sprite_width - 20);
 }
 
-// responds to the player picking option 1
-if (!picked && obj_inbed_where.pick_where == true)
+if (obj_fridge.clicked && !thing && !thing_2) && !met_voice
 {
-	draw_text_ext(x+17, y+16, picked_where, string_height(picked_where), sprite_width);
+	draw_text_ext(x+22, y+22, text_2, string_height(text_2), sprite_width - 20);
+	
+	timer++;
+	if (timer > timer_duration) thing = true;
 }
 
-// responds to the player picking option 2
-if (!picked && obj_inbed_who.pick_who == true)
+if (obj_fridge.clicked && thing && !thing_2 && !met_voice)
 {
-	draw_text_ext(x+17, y+16, picked_who, string_height(picked_who), sprite_width);
+	draw_text_ext(x+22, y+22, text_3, string_height(text_3), sprite_width - 20);
+	
+	timer_2++;
+	if (timer_2 > timer_duration) thing_2 = true;
 }
 
-// last line of dialogue
-if (picked && !done)
+if (obj_fridge.clicked && thing_2 && !met_voice && !obj_iam_kitchen.clicked)
 {
-	draw_text_ext(x+17, y+16, get_out, string_height(get_out), sprite_width);
+	draw_text_ext(x+22, y+22, text_4, string_height(text_4), sprite_width - 20);
 }
 
+if (obj_fridge.clicked && thing_2 && !met_voice && !obj_nobody_kitchen.clicked)
+{
+	draw_text_ext(x+22, y+22, text_4, string_height(text_4), sprite_width - 20);
+}
 
+if (obj_iam_kitchen.clicked || obj_nobody_kitchen.clicked && !met_voice && !thing_3) 
+{
+	draw_text_ext(x+22, y+22, choice_text, string_height(choice_text), sprite_width - 20);
+	
+	met_voice = true;
+	
+	timer_3++;
+	if (timer_3 > timer_duration) thing_3 = true;
+}
 
+// met voice
+if (!obj_fridge.clicked && met_voice)
+{
+	draw_text_ext(x+22, y+22, met_text, string_height(met_text), sprite_width - 20);
+}

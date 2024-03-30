@@ -1,28 +1,29 @@
-text = "Huh?";
-picked_where = "A bedroom, it looks like."
-picked_who = "I have absolutely no idea."
+text = "Interesting. I appear to be in a kitchen, but there still isn't a way out.";
+text_2 = "A fridge? I wonder if it has any food in it.";
+text_3 = "*Rumble*";
+text_4 = "Voice in Fridge: Who wants to enter my fridge?";
 
-get_out = "I need to get out of here."
+choice_text = "Voice in Fridge: If you want to enter the fridge, you must give me food.";
+
+met_text = "Voice in Fridge: Do you have any food for me?";
+
+// timers
+timer = 0;
+timer_duration = 100;
+
+timer_2 = 0;
+timer_3 = 0;
 
 // dialogue switches
-huh = false;
-picked = false;
-done = false;
+thing = false;
+thing_2 = false;
+thing_3 = false;
 
-// huh timer 
-active_timer = 0;
-active_duration = 100;
+met_voice = false;
 
-// choice timer
-timer_2 = 0;
-timer_2_duration = 150;
-
-// get out timer
-timer_3 = 0;
-timer_3_duration = 150;
-
-function Activate_Text_Box(new_text)
+function Activate_Text_Box_2(new_text)
 {
 	visible = true;
 	text = new_text;
 }
+
